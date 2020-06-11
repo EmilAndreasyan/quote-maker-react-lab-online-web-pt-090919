@@ -74,9 +74,9 @@ class QuoteForm extends Component {
   }
 }
 
-// const mapDispatchToProps = dispatch => ({
-//   addQuote: formData => dispatch({type: 'ADD_QUOTE', payload: formData})
-// })
+const mapDispatchToProps = dispatch => ({
+  addQuote: formData => dispatch({type: 'ADD_QUOTE', payload: formData})
+})
 
 //add arguments to connect as needed
 export default connect(null, {addQuote})(QuoteForm);
